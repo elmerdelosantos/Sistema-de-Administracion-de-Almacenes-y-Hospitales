@@ -1,0 +1,245 @@
+<!DOCTYPE html>  
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Portal SAVI</title>
+        <meta name="description" content="">
+        <meta name="author" content="JWM Solutions">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="../css/main.css" rel="stylesheet" type="text/css" media="screen" />
+    	<link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <!--[if IE]><link rel="stylesheet" href="../css/ie.css" /><![endif]-->
+    </head>
+    <body>
+    	<div class="container clearfix bg-gradient">
+        	<div class="header">
+            	<div class="header-right">
+                	<span>
+                        <ul class="links">
+                            <li class="welcom">Bienvenido:&nbsp;</li>
+                            <li><strong>Admin</strong>.</li>
+                            <li><a href="#">&nbsp;&nbsp;|&nbsp;&nbsp;Soporte</a></li>
+                            <li><a href="#">&nbsp;&nbsp;|&nbsp;&nbsp;Preguntas frecuentes</a></li>
+                            <li><a href="#">&nbsp;&nbsp;|&nbsp;&nbsp;Salir</a></li>
+                        </ul>
+                	</span>
+                </div>
+            	<div class="header-left">
+                	<span><img src="../css/theme-default/img/logos/logo-small.png" class="logo-small" /></span><h1 class="section-title">Sistema de control de inventarios</h1>
+                </div>
+            	
+            </div>
+            <div class="menu">
+            	<ul class="nav">
+                    <li class="opc"><a href="home.html"><span></span>Inicio</a></li>
+                    <li class="opc"><a href="surtido.html"><span></span>Surtido</a>
+                    	<ul>
+                            <li><a href="surtido-personal-autorizado.html" class="icon-arrow-right">Surtido a personal autorizado</a></li>
+                            <li><a href="surtido-recetas.html" class="icon-arrow-right">Surtido de recetas</a></li>
+                            <li><a href="surtido.html" class="icon-arrow-right">Consultas / Modificaciones</a></li>
+                        </ul>
+                    </li>
+                    <li class="opc activa"><a href="transferencia.html"><span></span>Transferencias</a>
+                    	<ul>
+                            <li><a href="transferencia.html" class="icon-arrow-right">Creación</a></li>
+							<li><a href="transferencia-entradas-salidas.html" class="icon-arrow-right">Movimientos de almacén</a></li>
+                            <li><a href="transferencia-recepcion.html" class="icon-arrow-right">Recepción</a></li>
+                            <li><a href="transferencia-consultas.html" class="icon-arrow-right">Consultas / Modificaciones</a></li>
+                        </ul>
+                    </li>
+					<li class="opc"><a href="#"><span></span>Movimientos</a></li>
+                    <li class="opc"><a href="recetas.html"><span></span>Recetas</a>
+                    	<ul>
+                            <li><a href="recetas-creacion.html" class="icon-arrow-right">Creación</a></li>
+                            <li><a href="recetas-consultas.html" class="icon-arrow-right">Consultas / Modificaciones</a></li>
+                        </ul>
+                    </li>
+                    <li class="opc"><a href="reportes.html"><span></span>Reportes</a></li>
+                    <li class="opc"><a href="administracion.html"><span></span>Administración</a>
+                    	<ul>
+                            <li><a href="administracion-personal-creacion.html" class="icon-arrow-right">Creación</a></li>
+                            <li><a href="administracion-productos.html" class="icon-arrow-right">Productos</a></li>
+                            <li><a href="administracion-personal-consultas.html" class="icon-arrow-right">Consultas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="content clearfix">
+				<h1 class="seccion-title icon-trans"><span>Órdenes de transferencia /</span> Creación</h1>
+                <div class="separador-content"></div>
+                <div class="blank-container clearfix">
+                	<p>Almacén surtidor:&nbsp;&nbsp;<strong>Toluca</strong></p>
+                </div>
+                <div class="white-container clearfix">
+                	<form name="form-tipo-trans" class="form-tipo-trans">
+                    	<span>
+                    		<label for="motivo">Almacén destino:</label>
+                			<select name="motivo"><option>----</option></select>
+							<a href="#" id="" class="button btn-gray btn-crear-trans">Crear transferencia</a>
+                        </span>
+                    </form>
+                    <div class="column-right">
+                    	<div class="wrapper">
+                            <form name="form-surtido-receta">
+                            	<label for="orden">Con orden existente</label>
+                                <input name="orden" class="orden" type="text" placeholder="# Orden" />
+                                <a href="wm_recetas_encontradas.html" id="" class="button btn-gray btn-surtido-receta iframe">Buscar</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="white-container alter-container clearfix">
+                	Estatus de la orden:&nbsp;&nbsp;<strong>Cerrado.</strong><a href="#" class="editar"> ( Click para editar ).</a>
+                </div>
+                <div class="blank-container clearfix">
+                    <a href="wm_ver_catalogo.html" id="" class="button right btn-ver-catalogo iframe"><span class="icon-zoom">Ver cat&aacute;logo</span></a>
+                    <p class="receta-med">&iquest;No recuerdas el medicamento?</p>
+                 </div>
+                 <div class="white-container-shadow clearfix">
+                    <table border="0" cellpadding="0" cellspacing="0" class="grid">
+                    	<thead>
+                        	<tr>
+                            	<th width=""><span class="icon-arrow-down-small">CLAVE</span></th>
+                                <th width="">Nombre</th>
+                                <th width="">Cantidad</th>
+                                <th width="">Caducidad</th>
+                                <th width="">Localización</th>
+                                <th width="">Nombre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>22</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>300</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="foot-grid">
+                    	<ul class="paginacion">
+                            <li><a href="#" class="prev"><img src="../img/icons/arrow-left.png"/></a></li>
+                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#" class="next"><img src="../img/icons/arrow-right.png"/></a></li>
+                    	</ul>
+                    	<p>Mostrando <strong>1</strong> - <strong>20</strong> Elementos. Pagina <strong>2</strong> de <strong>20</strong>.</p>
+                    </div>
+            	</div>
+                <div class="white-container clearfix">
+                	<input type="checkbox" /> Cerrar transferencia
+                </div>
+                <div class="separador-content"></div>
+                <a href="#" id="btn-grabar" class="button"><span class="icon-check">Grabar</span></a>
+                <a href="#" id="btn-grabar-editar" class="button"><span class="icon-print">Grabar e imprimir</span></a>
+            </div><!--end content-->
+        </div><!--end container-->
+        <div class="footer">Necesitas ayuda?, consulta nuestras <a href="#"><strong>preguntas frecuentes</strong></a> o entra <a href="#"><strong>aqu&iacute;</strong></a><br />&reg; 2011 SAVI</div>
+		<script type="text/javascript" src="../js/jquery-1.4.4.js"></script>
+        <script type="text/javascript" src="../js/functions.js"></script>
+        <script type="text/javascript" src="../js/onfly.js"></script>
+        
+    </body>
+</html>

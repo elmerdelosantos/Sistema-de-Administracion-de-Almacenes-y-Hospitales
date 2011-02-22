@@ -1,0 +1,189 @@
+<!DOCTYPE html>  
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Portal SAVI</title>
+        <meta name="description" content="">
+        <meta name="author" content="JWM Solutions">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="../css/main.css" rel="stylesheet" type="text/css" media="screen" />
+    	<link href="../css/theme-orange/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <!--[if IE]><link rel="stylesheet" href="../css/ie.css" /><![endif]-->
+    </head>
+    <body>
+    	<div class="container clearfix bg-gradient">
+        	<div class="header">
+            	<div class="header-right">
+                	<span>
+                        <ul class="links">
+                            <li class="welcom">Bienvenido:&nbsp;</li>
+                            <li><strong>Admin</strong>.</li>
+                            <li><a href="#">&nbsp;&nbsp;|&nbsp;&nbsp;Soporte</a></li>
+                            <li><a href="#">&nbsp;&nbsp;|&nbsp;&nbsp;Preguntas frecuentes</a></li>
+                            <li><a href="#">&nbsp;&nbsp;|&nbsp;&nbsp;Salir</a></li>
+                        </ul>
+                	</span>
+                </div>
+            	<div class="header-left">
+                	<span><img src="../css/theme-default/img/logos/logo-small.png" class="logo-small" /></span><h1 class="section-title">Sistema de control de inventarios</h1>
+                </div>
+            	
+            </div>
+            <div class="menu">
+            	<ul class="nav">
+                    <li class="opc activa"><a href="home.html"><span></span>Inicio</a></li>
+                    <li class="opc"><a href="surtido.html"><span></span>Surtido</a>
+                    	<ul>
+                            <li><a href="surtido-personal-autorizado.html" class="icon-arrow-right">Surtido a personal autorizado</a></li>
+                            <li><a href="surtido-recetas.html" class="icon-arrow-right">Surtido de recetas</a></li>
+                            <li><a href="surtido.html" class="icon-arrow-right">Consultas / Modificaciones</a></li>
+                        </ul>
+                    </li>
+                    <li class="opc"><a href="transferencia.html"><span></span>Transferencias</a>
+                    	<ul>
+                            <li><a href="transferencia.html" class="icon-arrow-right">Creación</a></li>
+							<li><a href="transferencia-entradas-salidas.html" class="icon-arrow-right">Movimientos de almacén</a></li>
+                            <li><a href="transferencia-recepcion.html" class="icon-arrow-right">Recepción</a></li>
+                            <li><a href="transferencia-consultas.html" class="icon-arrow-right">Consultas / Modificaciones</a></li>
+                        </ul>
+                    </li>
+					<li class="opc"><a href="#"><span></span>Movimientos</a></li>
+                    <li class="opc"><a href="recetas.html"><span></span>Recetas</a>
+                    	<ul>
+                            <li><a href="recetas-creacion.html" class="icon-arrow-right">Creación</a></li>
+                            <li><a href="recetas-consultas.html" class="icon-arrow-right">Consultas / Modificaciones</a></li>
+                        </ul>
+                    </li>
+                    <li class="opc"><a href="reportes.html"><span></span>Reportes</a></li>
+                    <li class="opc"><a href="administracion.html"><span></span>Administración</a>
+                    	<ul>
+                            <li><a href="administracion-personal-creacion.html" class="icon-arrow-right">Creación</a></li>
+                            <li><a href="administracion-productos.html" class="icon-arrow-right">Productos</a></li>
+                            <li><a href="administracion-personal-consultas.html" class="icon-arrow-right">Consultas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="content clearfix">
+            	<h1 class="seccion-title icon-user"><span>Bienvenido:</span> Jose Alberto Gómez</h1>
+                <div class="separador-content"></div>
+                <div class="existencia-box">
+                    <h2 class="icon-grafica">Existencia en inventario</h2>
+                    <div class="container-existencia">
+                        <p>Gráfica de caducidad de medicamentos</p>
+                        <img src="../img/others/grafica-inventario.png" />
+                    </div>
+                    <a href="#" id="ver-reportes" class="button btn-gray">Ver otros reportes</a>
+                </div>
+            	<div class="alertas-box">
+                	
+                    	<h2 class="icon-alertas">Alertas</h2>
+                        <ul class="status">
+                        	<li><img src="../img/icons/icon-pendiente.png"/> = Pendiente</li>
+                            <li><img src="../img/icons/icon-standby.png"/> = Stand by</li>
+                            <li><img src="../img/icons/icon-entregada.png"/> = Entregada</li>
+                        </ul>
+                    
+                    <table border="0" cellpadding="0" cellspacing="0" class="table-even">
+                    	<thead>
+                        	<tr>
+                            	<th>FECHA</th>
+                                <th>ID</th>
+                                <th>Descripción</th>
+                                <th>Estatus</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr class="pendiente">
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>Transferencia almacén Toluca mañana por la mañana</td>
+                                <td><img src="../img/icons/icon-pendiente.png"/></td>
+                            </tr>
+                            <tr class="pendiente">
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>Transferencia almacén Toluca</td>
+                                <td><img src="../img/icons/icon-pendiente.png"/></td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>Transferencia almacén Toluca</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>Transferencia almacén Toluca</td>
+                                <td><img src="../img/icons/icon-entregada.png"/></td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>Transferencia almacén Toluca</td>
+                                <td><img src="../img/icons/icon-entregada.png"/></td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>Transferencia almacén Toluca</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr class="pendiente">
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>Transferencia almacén Toluca</td>
+                                <td><img src="../img/icons/icon-pendiente.png"/></td>
+                            </tr>
+                            <tr class="pendiente">
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>Transferencia almacén Toluca</td>
+                                <td><img src="../img/icons/icon-pendiente.png"/></td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>Transferencia almacén Toluca</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>Transferencia almacén Toluca</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>Transferencia almacén Toluca</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>Transferencia almacén Toluca</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>Transferencia almacén Toluca</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                        </thead>
+                    </table>
+                </div>
+            </div><!--end content-->
+        </div><!--end container-->
+        <div class="footer">Necesitas ayuda?, consulta nuestras <a href="#"><strong>preguntas frecuentes</strong></a> o entra <a href="#"><strong>aqu&iacute;</strong></a><br />&reg; 2011 SAVI</div>
+		<script type="text/javascript" src="../js/jquery-1.4.4.js"></script>
+        <script type="text/javascript" src="../js/functions.js"></script>
+        <script type="text/javascript" src="../js/onfly.js"></script>
+        
+    </body>
+</html>
