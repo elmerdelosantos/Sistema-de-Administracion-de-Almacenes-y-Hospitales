@@ -5,9 +5,8 @@ Date:
 ----------------------
 */
 /*ie6, ie7, ie8*/
-.login-form{background:url(../img/backgrounds/login-form.png) no-repeat;}
-.logo-login{padding:0 0 10px 0; background:url(../img/backgrounds/bg-shadow-logo.png) center bottom no-repeat;}
-.container-login{padding:200px 0 20px 0;}
+.login-form{border-left:1px solid #ddd; border-top:1px solid #ddd; border-right:1px solid #FFF; border-bottom:1px solid #FFF;}
+.logo-login{padding:0 0 6px 0; background:url(../img/backgrounds/bg-shadow-logo.png) center bottom no-repeat;}
 
 div.selector select{margin:10px 0 0 0;}
 table.grid th{ background:url(../css/theme-default/img/backgrounds/bg-thgrid.png) repeat-x;}

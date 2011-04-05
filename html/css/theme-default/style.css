@@ -661,7 +661,7 @@ background: -webkit-gradient(linear, 0 0, 0 50%, from(#4B6688), to(#424D5C));
 background: -moz-linear-gradient(#4B6688, #424D5C 50%);
 background: linear-gradient(#4B6688, #424D5C 50%);
 -pie-background: linear-gradient(#4B6688, #424D5C 50%);
-position:relative; behavior: url(../js/PIE.htc);}
+position:relative; behavior: url(../js/PIE.htc); font-family:Arial, Helvetica, sans-serif;}
 .button:hover{color:#fff;}
 
 .btn-gray{ height:30px!important; line-height:30px!important;

@@ -34,14 +34,14 @@
             <div class="menu">
             	<ul class="nav">
                     <li class="opc"><a href="home.html"><span></span>Inicio</a></li>
-                    <li class="opc"><a href="surtido.html"><span></span>Surtido</a>
+                    <li class="opc activa"><a href="surtido.html"><span></span>Surtido</a>
                     	<ul>
                             <li><a href="surtido-personal-autorizado.html" class="icon-arrow-right">Surtido a personal autorizado</a></li>
                             <li><a href="surtido-recetas.html" class="icon-arrow-right">Surtido de recetas</a></li>
                             <li><a href="surtido.html" class="icon-arrow-right">Consultas / Modificaciones</a></li>
                         </ul>
                     </li>
-                    <li class="opc activa"><a href="transferencia.html"><span></span>Transferencias</a>
+                    <li class="opc"><a href="transferencia.html"><span></span>Transferencias</a>
                     	<ul>
                             <li><a href="transferencia.html" class="icon-arrow-right">Creación</a></li>
 							<li><a href="transferencia-entradas-salidas.html" class="icon-arrow-right">Movimientos de almacén</a></li>
@@ -67,24 +67,20 @@
                 </ul>
             </div>
             <div class="content clearfix">
-				<h1 class="seccion-title icon-trans"><span>Órdenes de transferencia /</span> Creación</h1>
+            	<a href="surtido.html" class="right btn-back">REGRESAR A <span class="navy-blue">SURTIDO</span></a>
+            	<h1 class="seccion-title icon-surtido"><span>Surtido de medicamentos /</span> Personal autorizado</h1>
                 <div class="separador-content"></div>
-                <div class="blank-container clearfix">
-                	<p>Almacén surtidor:&nbsp;&nbsp;<strong>Toluca</strong></p>
-                </div>
                 <div class="white-container clearfix">
-                	<form name="form-tipo-trans" class="form-tipo-trans">
-                    	<span>
-                    		<label for="motivo">Almacén destino:</label>
-                			<select name="motivo"><option>----</option></select>
-							<a href="#" id="" class="button btn-gray btn-crear-trans">Crear transferencia</a>
-                        </span>
+                	<form name="form-crea-surtido">
+                		<input name="nombrePA" class="nombrePA" type="text" placeholder="Nombre del personal autorizado"/>
+                        <a href="#" id="btn-crear-surtido" class="button btn-gray">Crear surtido</a>
+                        <p class="foot-input"><strong>Armando Pérez G.</strong> Clave: <strong>3392102921</strong>, Área: <strong>San Nicolás, NL.</strong></p>
                     </form>
                     <div class="column-right">
                     	<div class="wrapper">
-                            <form name="form-surtido-receta">
-                            	<label for="orden">Con orden existente</label>
-                                <input name="orden" class="orden" type="text" placeholder="# Orden" />
+                            <form name="form-surtido-receta" class="jqt">
+                            	<label for="paciente">Surtido por receta</label>
+                                <input name="paciente" class="paciente" type="text" placeholder="Folio o nombre del paciente"/>
                                 <a href="wm_recetas_encontradas.html" id="" class="button btn-gray btn-surtido-receta iframe">Buscar</a>
                             </form>
                         </div>
@@ -94,6 +90,7 @@
                 	Estatus de la orden:&nbsp;&nbsp;<strong>Cerrado.</strong><a href="#" class="editar"> ( Click para editar ).</a>
                 </div>
                 <div class="blank-container clearfix">
+                    <h2>Medicamentos a surtir:</h2> 
                     <a href="wm_ver_catalogo.html" id="" class="button right btn-ver-catalogo iframe"><span class="icon-zoom">Ver cat&aacute;logo</span></a>
                     <p class="receta-med">&iquest;No recuerdas el medicamento?</p>
                  </div>
@@ -101,16 +98,18 @@
                     <table border="0" cellpadding="0" cellspacing="0" class="grid">
                     	<thead>
                         	<tr>
-                            	<th width=""><span class="icon-arrow-down-small">CLAVE</span></th>
-                                <th width="">Nombre</th>
-                                <th width="">Cantidad</th>
-                                <th width="">Caducidad</th>
-                                <th width="">Localización</th>
-                                <th width="">Nombre</th>
+								<th width="50">Surtido</th>
+                            	<th><span class="icon-arrow-down-small">CLAVE</span></th>
+                                <th>Nombre</th>
+                                <th>Cantidad</th>
+                                <th>Caducidad</th>
+                                <th>Localización</th>
+                                <th>Nombre</th>
                             </tr>
                         </thead>
                         <tbody>
                         	<tr>
+								<td><input type="checkbox" name="" /></td>
                             	<td>10/01/2011</td>
                                 <td>CF20112042</td>
                                 <td>1</td>
@@ -119,6 +118,7 @@
                                 <td>10/01/2011</td>
                             </tr>
                             <tr>
+								<td><input type="checkbox" name="" /></td>
                             	<td>10/01/2011</td>
                                 <td>CF20112042</td>
                                 <td>22</td>
@@ -127,7 +127,8 @@
                                 <td>10/01/2011</td>
                             </tr>
                             <tr>
-                            	<td>10/01/2011</td>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
                                 <td>CF20112042</td>
                                 <td>300</td>
                                 <td>10/01/2011</td>
@@ -135,6 +136,79 @@
                                 <td>10/01/2011</td>
                             </tr>
                             <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+								<td><input type="checkbox" name="" /></td>
                             	<td>10/01/2011</td>
                                 <td>CF20112042</td>
                                 <td>1</td>
@@ -143,71 +217,8 @@
                                 <td>10/01/2011</td>
                             </tr>
                             <tr>
-                            	<td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>1</td>
-                                <td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>10/01/2011</td>
-                            </tr>
-                            <tr>
-                            	<td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>1</td>
-                                <td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>10/01/2011</td>
-                            </tr>
-                            <tr>
-                            	<td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>1</td>
-                                <td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>10/01/2011</td>
-                            </tr>
-                            <tr>
-                            	<td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>1</td>
-                                <td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>10/01/2011</td>
-                            </tr>
-                            <tr>
-                            	<td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>1</td>
-                                <td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>10/01/2011</td>
-                            </tr>
-                            <tr>
-                            	<td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>1</td>
-                                <td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>10/01/2011</td>
-                            </tr>
-                            <tr>
-                            	<td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>1</td>
-                                <td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>10/01/2011</td>
-                            </tr>
-                            <tr>
-                            	<td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>1</td>
-                                <td>10/01/2011</td>
-                                <td>CF20112042</td>
-                                <td>10/01/2011</td>
-                            </tr>
-                            <tr>
-                            	<td>10/01/2011</td>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
                                 <td>CF20112042</td>
                                 <td>1</td>
                                 <td>10/01/2011</td>
@@ -227,13 +238,10 @@
                     	</ul>
                     	<p>Mostrando <strong>1</strong> - <strong>20</strong> Elementos. Pagina <strong>2</strong> de <strong>20</strong>.</p>
                     </div>
-            	</div>
-                <div class="white-container clearfix">
-                	<input type="checkbox" /> Cerrar transferencia
-                </div>
+            	</div>    
+                
                 <div class="separador-content"></div>
-                <a href="#" id="btn-grabar" class="button"><span class="icon-check">Grabar</span></a>
-                <a href="#" id="btn-grabar-editar" class="button"><span class="icon-print">Grabar e imprimir</span></a>
+                <a href="#" id="btn-grabar" class="button"><span class="icon-check">Aceptar</span></a>
             </div><!--end content-->
         </div><!--end container-->
         <div class="footer">Necesitas ayuda?, consulta nuestras <a href="#"><strong>preguntas frecuentes</strong></a> o entra <a href="#"><strong>aqu&iacute;</strong></a><br />&reg; 2011 SAVI</div>

@@ -8,8 +8,8 @@
         <meta name="author" content="JWM Solutions">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link href="../css/main.css" rel="stylesheet" type="text/css" media="screen" />
-    	<link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="../css/main.css" rel="stylesheet" type="text/css" media="all" />
+    	<link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" media="all" />
         <!--[if IE]><link rel="stylesheet" href="../css/ie.css" /><![endif]-->
     </head>
     <body>
@@ -77,13 +77,13 @@
                             <input type="text" id="rec-folio" name="rec-folio" placeholder="# Folio"/>
                         </span>
                         <span>
-                            <label for="tipo-rep">Elige el tipo de reporte:</label>
-                            <select name="tipo-rep"><option>----</option></select>
+                            <label for="tipo-rep">Estatus:</label>
+                            <select name="tipo-rep"><option>Estatus</option><option>-----</option><option>----</option></select>
                         </span>
                         <span>
                             <label for="fecha">Rango de fecha:</label>
-                            <input type="text" id="fecha-ini" name="fecha-ini" placeholder="Inicial"/>
-                            <input type="text" id="fecha-fin" name="fecha-fin" placeholder="Final"/>
+                            <input type="text" name="fecha-ini" class="fecha-ini" placeholder="Inicial"/>
+                            <input type="text" name="fecha-fin" class="fecha-fin" placeholder="Final"/>
                         </span>
                         <span>
                             <label>&nbsp;</label>

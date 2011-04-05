@@ -8,8 +8,8 @@
         <meta name="author" content="JWM Solutions">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link href="../css/main.css" rel="stylesheet" type="text/css" media="screen" />
-    	<link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="../css/main.css" rel="stylesheet" type="text/css" media="all" />
+    	<link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" media="all" />
         <!--[if IE]><link rel="stylesheet" href="../css/ie.css" /><![endif]-->
     </head>
     <body>
@@ -73,53 +73,213 @@
                 	<span class="folio">FOLIO:<strong> RCT94941</strong></span>
 					<span class="data">Médico:&nbsp;<strong>Jonás Ernesto Pérez Rodríguez</strong>&nbsp;&nbsp;|&nbsp;&nbsp;Unidad Médica:&nbsp;<strong>Montemorelos, Nuevo León</strong></span>
                 </div>
-                <div class="white-container clearfix">
-                	<form name="form-recetas" class="form-recetas">
-                    	<span>
-                    		<label for="">Tipo de consulta:</label>
-                			<select name="">
-                            	<option>Tipo 1</option>
-                                <option>Tipo 2</option>
-                            </select>
-                        </span>
-                        <span>
-                    		<label for="">Nombre del paciente:</label>
-                			 <input type="text" name="" />
-                        </span>
-                        <span>
-                    		<label for="">Tipo de consulta:</label>
-                			<select name="">
-                            	<option>Tipo 1</option>
-                                <option>Tipo 2</option>
-                            </select>
-                        </span>
-                        <span>
-                    		<label for="">Nombre del paciente:</label>
-                			 <input type="text" name="" />
-                        </span>
-                        <span>
-                    		<label for="">Tipo de consulta:</label>
-                			<select name="">
-                            	<option>Tipo 1</option>
-                                <option>Tipo 2</option>
-                            </select>
-                        </span>
-                        <span>
-                    		<label for="">Nombre del paciente:</label>
-                			 <input type="text" name="" />
-                        </span>
-                        <a href="#" id="" class="button btn-gray btn-buscar">Buscar</a>
-                    </form>
-                </div>
+               		
+                    <div class="group-box clearfix">
+                        <ul>
+                            <li>
+                                <span class="close-group">Datos de la consulta</span>
+                                <div class="content-group clearfix">
+                                   <form name="form-admon" class="two-col">
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Tipo de consulta:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Otro dato:</label>
+                                                <input type="text" name="" />
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Tipo de consulta:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Genero:</label>
+                                                <label class="field"><input type="checkbox" name="" value=""/>Hombre</label>
+                                                <label class="field"><input type="checkbox" name="" value=""/>Mujer</label>
+                                                <label class="field"><input type="checkbox" name="" value=""/>No se sabe</label>
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Tipo de consulta:</label>
+                                                <label class="field"><input type="radio" name="opc" value=""/>Tipo 1</label>
+                                                <label class="field"><input type="radio" name="opc" value=""/>Tipo 2</label>
+                                                <label class="field"><input type="radio" name="opc" value=""/>Tipo 3</label>
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Otro dato:</label>
+                                                <input type="text" name="" />
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Tipo de consulta:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Otro dato:</label>
+                                                <input type="text" name="" />
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Tipo de consulta:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Otro dato:</label>
+                                                <input type="text" name="" />
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            
+                        </ul>
+					</div>
+                    
+                	<div class="group-box clearfix">
+                        <ul>
+                            <li>
+                                <span class="close-group">Datos del paciente</span>
+                                <div class="content-group clearfix">
+                                   <form name="form-admon" class="two-col">
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Tipo de consulta:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Otro dato:</label>
+                                                <input type="text" name="" />
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Tipo de consulta:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Genero:</label>
+                                                <label class="field"><input type="checkbox" name="" value=""/>Hombre</label>
+                                                <label class="field"><input type="checkbox" name="" value=""/>Mujer</label>
+                                                <label class="field"><input type="checkbox" name="" value=""/>No se sabe</label>
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Tipo de consulta:</label>
+                                                <label class="field"><input type="radio" name="opc" value=""/>Tipo 1</label>
+                                                <label class="field"><input type="radio" name="opc" value=""/>Tipo 2</label>
+                                                <label class="field"><input type="radio" name="opc" value=""/>Tipo 3</label>
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Otro dato:</label>
+                                                <input type="text" name="" />
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Tipo de consulta:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Otro dato:</label>
+                                                <input type="text" name="" />
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Tipo de consulta:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                            <span class="right">
+
+                                                <label for="">Otro dato:</label>
+                                                <input type="text" name="" />
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            
+                        </ul>
+					</div>
+                    
+                    <div class="group-box clearfix">
+                        <ul>
+                            <li>
+                                <span class="close-group">Otros datos</span>
+                                <div class="content-group clearfix">
+                                   <form name="form-admon" class="two-col">
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Tipo de consulta:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Otro dato:</label>
+                                                <input type="text" name="" />
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Tipo de consulta:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Genero:</label>
+                                                <label class="field"><input type="checkbox" name="" value=""/>Hombre</label>
+                                                <label class="field"><input type="checkbox" name="" value=""/>Mujer</label>
+                                                <label class="field"><input type="checkbox" name="" value=""/>No se sabe</label>
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Tipo de consulta:</label>
+                                                <label class="field"><input type="radio" name="opc" value=""/>Tipo 1</label>
+                                                <label class="field"><input type="radio" name="opc" value=""/>Tipo 2</label>
+                                                <label class="field"><input type="radio" name="opc" value=""/>Tipo 3</label>
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Otro dato:</label>
+                                                <input type="text" name="" />
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Tipo de consulta:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Otro dato:</label>
+                                                <input type="text" name="" />
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Tipo de consulta:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                            <span class="right">
+
+                                                <label for="">Otro dato:</label>
+                                                <input type="text" name="" />
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            
+                        </ul>
+					</div>
+                
                 <div class="blank-container clearfix">
-                    <h2>Medicamentos a surtir:</h2> 
-                    <label>Opciones de la lista:</label>
-                    <select>
-                        <option>Seleccionar</option>
-                    </select>
-                    <select>
-                        <option>Acciones</option>
-                    </select>
+                    <h2>Agrgar medicamentos:</h2> 
+                   
                     <a href="wm_ver_catalogo.html" id="btn-ver-catalogo" class="button right iframe"><span class="icon-zoom">Ver cat&aacute;logo</span></a>
                     <p class="receta-med">&iquest;No recuerdas el medicamento?</p>
                  </div>

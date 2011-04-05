@@ -8,8 +8,8 @@
         <meta name="author" content="JWM Solutions">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link href="../css/main.css" rel="stylesheet" type="text/css" media="screen" />
-    	<link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="../css/main.css" rel="stylesheet" type="text/css" media="all" />
+    	<link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" media="all" />
         <!--[if IE]><link rel="stylesheet" href="../css/ie.css" /><![endif]-->
     </head>
     <body>
@@ -70,48 +70,97 @@
             	<h1 class="seccion-title icon-reportes">Reportes</h1>
                 <div class="separador-content"></div>
                 <div class="white-container gray-container clearfix">
-                	<form name="form-reportes" class="form-reportes">
-                    	<span>
-                    		<label for="tipo-rep">Elige el tipo de reporte:</label>
-                			<select name="tipo-rep"><option>----</option></select>
-                        </span>
-						<span>
-                    		<label for="rep-orden">Parámetro 1:</label>
-							<input type="text" id="rep-orden" name="rep-orden" placeholder="# Orden"/>
-                        </span>
-						<span>
-                    		<label for="fecha">Rango de fecha:</label>
-                			<input type="text" id="fecha-ini" name="fecha-ini" placeholder="Inicial"/>
-							<input type="text" id="fecha-fin" name="fecha-fin" placeholder="Final"/>
-                        </span>
-						<span>
-                    		<label>&nbsp;</label>
-                			<a href="#" id="" class="button btn-gray btn-buscar">Buscar</a>
-                        </span>
-                    </form>
+                	<div class="tipo-rep-label">
+                        <form name="form-reportes" class="form-reportes">
+                            <label for="tipo-rep">1. Elige el tipo de reporte: </label>
+                            <select name="tipo-rep" id="tipo-rep"><option>Uno</option><option>Dos</option><option>Tres</option></select>
+                        </form>
+                    </div>
                 </div>
-                <div class="blank-container clearfix">
-                    <h2 class="navy-blue">Reporte generado:</h2>
-				</div>
-				<div id="tabs">
-					<a href="#" id="" class="right btn-tabs"><span class="icon-print">Imprimir</span></a>
-					<a href="#" id="" class="right btn-tabs"><span class="icon-export">Exportar</span></a>
-					<ul>
-						<li><a href="#tabs-1">TIPO VISTA 1</a></li>
-						<li><a href="#tabs-2">TIPO VISTA 2</a></li>
-						<li><a href="#tabs-3">TIPO VISTA 3</a></li>
-					</ul>
-					<div id="tabs-1">
-						<img src="../img/others/grafica-reportes.jpg" />
+                <div class="dynamic-block-group">
+                <div class="group-box clearfix">
+                        <ul>
+                            <li>
+                                <span class="close-group">2. Elige los parametros deseados</span>
+                                <div class="content-group clearfix">
+                                   <form name="form-admon" class="two-col">
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Almacén:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Zona del almacén:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Estatus de la OT:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Tipo de Orden:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Producto:</label>
+                                                <input type="text" name="" />
+                                            </span>
+                                            <span class="right">
+                                                <label for="">Usuario:</label>
+                                                <input type="text" name="" />
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                <label for="">Código de razón:</label>
+                                                <select name=""><option>---</option></select>
+                                            </span>
+                                            <span class="right">
+                                               
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="left">
+                                                   <a href="#" id="" class="button btn-gray btn-genera-rep">Generar reporte</a>
+                                       		</span>
+                                            <span class="right">
+                                               
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
 					</div>
-					<div id="tabs-2">
-						<img src="../img/others/grafica-reportes.jpg" />
-					</div>
-					<div id="tabs-3">
-						<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-						<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-					</div>
-				</div>   
+                </div>    
+                <div class="dynamic-block">    
+                    <div class="blank-container clearfix">
+                        <h2 class="navy-blue">3. Reporte generado:</h2>
+                    </div>
+                    <div id="tabs">
+                        <a href="#" id="" class="right btn-tabs"><span class="icon-print">Imprimir</span></a>
+                        <a href="#" id="" class="right btn-tabs"><span class="icon-export">Exportar</span></a>
+                        <ul>
+                            <li><a href="#tabs-1">TIPO VISTA 1</a></li>
+                            <li><a href="#tabs-2">TIPO VISTA 2</a></li>
+                            <li><a href="#tabs-3">TIPO VISTA 3</a></li>
+                        </ul>
+                        <div id="tabs-1">
+                            <img src="../img/others/grafica-reportes.jpg" />
+                        </div>
+                        <div id="tabs-2">
+                            <img src="../img/others/grafica-reportes.jpg" />
+                        </div>
+                        <div id="tabs-3">
+                            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                        </div>
+                    </div>  
+                </div><!--end dynamic-block--> 
             </div><!--end content-->
         </div><!--end container-->
         <div class="footer">Necesitas ayuda?, consulta nuestras <a href="#"><strong>preguntas frecuentes</strong></a> o entra <a href="#"><strong>aqu&iacute;</strong></a><br />&reg; 2011 SAVI</div>
