@@ -473,9 +473,9 @@ input.paciente{width:275px;margin:0 10px 0 0;}
 .ui-dialog-titlebar{color:#FFF!important;text-shadow:0 1px 1px #000!important;border:none!important;background:-webkit-gradient(linear,0 0,0 50%,from(#4B6688),to(#424D5C))!important;background:-moz-linear-gradient(#4B6688,#424D5C 50%)!important;background:linear-gradient(#4B6688,#424D5C 50%)!important;-pie-background:linear-gradient(#4B6688,#424D5C 50%)!important;position:relative;behavior:url(../js/PIE.htc);}
 .ui-dialog-content p{margin:0;}
 /******************************************** transferencias **************************************************************************/
-form span{float:left;margin:0 15px 10px 0;}
-form span .selector,form span input.text{margin:0 10px 0 0;}
-form span select{float:left;clear:left;margin:0;}
+.form-trans-consulta  span{float:left;margin:0 15px 10px 0;}
+.form-trans-consulta span .selector,.form-trans-consulta span input.text{margin:0 10px 0 0;}
+.form-trans-consulta span select{float:left;clear:left;margin:0;}
 .form-tipo-trans{float:left;}
 .form-trans-consulta input#trans-orden{width:190px;}
 .form-trans-consulta .btn-buscar{clear:left;}
@@ -608,3 +608,29 @@ hr{margin:0 0 10px 0;border:none;border-bottom:solid 1px #999;clear:both;}
 .button-02:hover{color:#fff; }
 
 .btn-back-02{ border:none; height:29px;line-height:29px;z-index:20;margin:5px 0 0 10px;color:#666;font-size:11px;padding:0 10px 1px 10px;background:#C6CDD4;border-top:1px solid #989EA3;border-left:1px solid #989EA3;text-shadow:0px 1px #FFF;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;box-shadow:inset 1px 1px 1px #AAA;-webkit-box-shadow:inset 1px 1px 1px #AAA;-moz-box-shadow:inset 1px 1px 1px #AAA;position:relative;behavior:url(../js/PIE.htc);}
+
+
+/******************************************** from elmer **************************************************************************/
+
+.validacion-error{
+           background:url(../img/icons/icon-warning.png) 10px center no-repeat;
+           background-color: #FBFBEA;
+           padding: 20px 0 20px 70px;
+           margin:0 0 10px 0;
+           border-bottom:1px solid #fff;
+           border-right:1px solid #fff;
+           box-shadow:inset 1px 1px 1px #DADADA;
+           -webkit-box-shadow:inset 1px 1px 1px #DADADA;
+           -moz-box-shadow:inset 1px 1px 1px #DADADA;
+           border-radius:4px;
+           -moz-border-radius:4px;
+           -webkit-border-radius:4px;
+           color:#333;
+           position:relative;
+           width:500px;
+       }
+       .validacion-campo
+       {
+           color:Red;
+           font-weight:bold;
+       }
