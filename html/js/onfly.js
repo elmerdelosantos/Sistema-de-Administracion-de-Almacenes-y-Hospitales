@@ -43,7 +43,7 @@ delay: 0,
 animation: {
 opacity: 'show'
 },
-speed: 'fast',
+speed: 'fast', 
 autoArrows: false,
 dropShadows: false
 }).find('ul').bgIframe(); 
@@ -53,6 +53,7 @@ $('.btn-surtido-receta').fancybox({width:483,height:174});
 $('.btn-ver-catalogo').fancybox({
 width:930,
 height:550,
+modal:true,
 showCloseButton:false
 });
 $('.getpass').fancybox({width:332,height:170});
@@ -60,7 +61,7 @@ $('.ver-vales').fancybox({width:920,height:520});
 
 
 // Codigo para generar el datepicker
-$(".fecha-ini, .fecha-fin, .fecha" ).datepicker();
+$(".fecha-ini, .fecha-fin, .fecha" ).datepicker({ dateFormat: 'dd/mm/yy' });
 
 // Codigo para generar el dialog de confirmación
 // a workaround for a flaw in the demo system (http://dev.jqueryui.com/ticket/4375), ignore!
