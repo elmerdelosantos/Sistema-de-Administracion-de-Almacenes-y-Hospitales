@@ -61,7 +61,13 @@ $('.ver-vales').fancybox({width:920,height:520});
 
 
 // Codigo para generar el datepicker
-$(".fecha-ini, .fecha-fin, .fecha" ).datepicker({ dateFormat: 'dd/mm/yy' });
+
+$(".fecha-ini, .fecha-fin, .fecha" ).datepicker({ 
+	dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'],
+	dateFormat: 'dd/mm/yy',
+	monthNamesShort: ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'],
+	monthNames: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre']
+	});
 
 // Codigo para generar el dialog de confirmación
 // a workaround for a flaw in the demo system (http://dev.jqueryui.com/ticket/4375), ignore!
