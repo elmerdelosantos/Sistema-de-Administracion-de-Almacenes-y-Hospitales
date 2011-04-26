@@ -340,17 +340,32 @@ div.uploader input{opacity:0;filter:alpha(opacity:0);position:absolute;top:0;rig
 .button{height:30px;line-height:30px;text-align:center;color:#FFF;border:none;float:left;display:inline;padding:0 10px;font-weight:bold;zoom:1;-webkit-box-shadow:0 1px 3px #AAAAAA;-moz-box-shadow:0 1px 3px #AAAAAA;box-shadow:0 1px 3px #AAAAAA;border-radius:20px;-moz-border-radius:20px;-webkit-border-radius:20px;background:-webkit-gradient(linear,0 0,0 50%,from(#4B6688),to(#424D5C));background:-moz-linear-gradient(#4B6688,#424D5C 50%);background:linear-gradient(#4B6688,#424D5C 50%);-pie-background:linear-gradient(#4B6688,#424D5C 50%); font-family:Arial, Helvetica, sans-serif; position:relative;behavior:url(../js/PIE.htc);}
 .button:hover{color:#fff;}
 .container-login{padding:200px 0 1px 0;background:url(../img/backgrounds/bg-shadow-login.png) center bottom no-repeat;margin:0 0 10px 0;}
-.login-box{margin:0 auto 30px;width:660px;background:#FAFAFA;position:relative;padding:20px;z-index:0;top:10px;-moz-box-shadow:0px 0px 6px #ccc;-webkit-box-shadow:0px 0px 6px #ccc;box-shadow:0px 0px 6px #ccc;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;behavior:url(../js/PIE.htc);}
+.login-box{
+	margin:0 auto 30px;
+	width:660px;
+	background:#FAFAFA;
+	position:relative;
+	padding:20px;
+	z-index:0;
+	top:10px;
+	-moz-box-shadow:0px 0px 6px #ccc;
+	-webkit-box-shadow:0px 0px 6px #ccc;
+	box-shadow:0px 0px 6px #ccc;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	behavior:url(../js/PIE.htc);
+}
 .login-form{float:right;width:301px;padding:20px;background:#F8F9FC;-moz-box-shadow:inset 1px 1px 1px #ccc,inset -1px -1px 1px #FFF;-webkit-box-shadow:inset 0px 0px 2px #ccc,inset -1px -1px 1px #FFF;box-shadow:inset 0px 0px 2px #ccc,inset -1px -1px 1px #FFF;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;position:relative;behavior:url(../js/PIE.htc);}
-.login-form div.field{clear:both;margin:0 0 18px 0;float:left;height:31px;width:100%;}
-.login-form label{color:#002B5E;font-weight:bold;text-align:right;padding:0 10px 0 0;font-size:12px;line-height:30px;width:80px;float:left;text-shadow:1px 1px 2px #FFF;height:34px;}
+.login-form div.field{clear:both;margin:0 0 18px 0;height:31px;}
+.login-form label, .login-form .lbl_text{color:#002B5E;font-weight:bold;text-align:right;padding:0 10px 0 0;font-size:12px;line-height:30px;width:80px;float:left;text-shadow:1px 1px 2px #FFF;height:34px;}
 .login-form label span{float:none;color:#666;font-size:11px;line-height:35px;font-weight:normal;}
 .login-form input{width:190px;margin-right:0;}
 .login-form div.selector{width:189px;}
 .login-form div.selector span{width:190px;}
 .login-form div.selector select{width:200px;}
-.login-form .pl{float:left;padding:0 0 0 88px;width:178px;}
-.login-form .pl label{width:auto;margin:0 0 5px 0;}
+.login-form .pl{padding:0 0 0 88px;}
+.login-form .pl .cont-chk{margin:0 0 10px 0;}
 .login-form .pl input{margin-left:0;}
 .login-form .btn-entrar{float:left;width:64px;cursor:pointer;text-align:center;margin:0;clear:both;font-size:14px;}
 .login-form .getpass{float:left;clear:both;font-size:11px;color:#666;font-size:11px;width:150px;}
@@ -480,6 +495,10 @@ input.paciente{width:275px;margin:0 10px 0 0;}
 .form-trans-consulta input#trans-orden{width:190px;}
 .form-trans-consulta .btn-buscar{clear:left;}
 input.fecha-ini,input.fecha-fin,input.fecha{background:url(../img/buttons/calendar.png) right no-repeat #F5F5F5;padding-right:30px;width:90px!important;cursor:pointer;}
+.form-admin-products .left{ width:auto;}
+.form-admin-products .right{ width:100px;}
+.form-admin-products .row{ width:auto; margin:0;}
+.form-admin-products input{ margin-right:10px;}
 .form-admin-products input#clave{width:150px;}
 .column-left h2.id,.column-left h2.id span{font-size:28px;color:#666;padding:0;margin:0;letter-spacing:-1px;}
 .lista-detalles{padding:0 0 0 240px;}

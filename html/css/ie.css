@@ -16,6 +16,7 @@ table.grid th{ background:url(../css/theme-default/img/backgrounds/bg-thgrid.png
 *+ html .ui-tabs .ui-tabs-nav li a{margin-left:-1px; }
 *+ html .ui-tabs .ui-tabs-panel{border:1px solid #CCC!important; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; padding-bottom:10px;}
 *+ html .ui-tabs .ui-tabs-nav li.ui-tabs-selected a{padding:2px 1em 16px 1em; float:left; margin-left:-1px;}
+*+ html .container-login{background:none;}
 
 /*only ie6 (* html) */
 * html .clearfix{height:1%;}
