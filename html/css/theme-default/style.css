@@ -669,7 +669,7 @@ background: -webkit-gradient(linear, 0 0, 0 50%, from(#FFFFFF), to(#ECECEC));
 background: -moz-linear-gradient(#FFFFFF, #ECECEC 50%);
 background: linear-gradient(#FFFFFF, #ECECEC 50%);
 -pie-background: linear-gradient(#FFFFFF, #ECECEC 50%);
-color:#333; font-weight:bold; font-size:12px; float:left; display:inline; padding:0 10px; margin:0;}
+color:#333; font-weight:bold; font-size:12px; float:left; display:inline; padding:0 10px; margin:0; position:relative;}
 .btn-gray:hover{color:#333;}
 
 .btn-tabs{height:21px; line-height:1; z-index:20; margin:-4px 0 0 10px; color:#000; padding:4px 10px 0;
