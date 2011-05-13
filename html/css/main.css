@@ -422,7 +422,7 @@ input.recupera-pass{width:280px;margin:0 0 15px 0;}
 .btn-back{height:28px;line-height:28px;z-index:20;margin:5px 0 0 10px;color:#666;font-size:11px;padding:0 10px;background:#C6CDD4;border-top:1px solid #989EA3;border-left:1px solid #989EA3;text-shadow:0px 1px #FFF;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;box-shadow:inset 1px 1px 1px #AAA;-webkit-box-shadow:inset 1px 1px 1px #AAA;-moz-box-shadow:inset 1px 1px 1px #AAA;position:relative;behavior:url(../js/PIE.htc);}
 .white-container,.green-container{background:#FFF;border:1px solid #CDCDCD;padding:20px 20px;margin:0 0 20px 0;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;clear:both;position:relative;behavior:url(../js/PIE.htc);clear:both;zoom:1;}
 .green-container{background:#EDF6E3;}
-p.done{background:url(../img/icons/done.png) 10px center no-repeat;padding:0 0 0 70px;margin:0;}
+p.done{background:url(../img/icons/done.png) 0 0 no-repeat;padding:0 0 0 40px;margin:0;}
 p.done span{font-size:17px;color:#00295B;font-weight:bold;}
 p.done .folio{/*font-size:18px;float:none;*/}
 p.error{background:url(../img/icons/icon-warning.png) 10px center no-repeat;padding:0 0 0 70px;margin:0 0 10px 0;}
@@ -621,7 +621,11 @@ hr{margin:0 0 10px 0;border:none;border-bottom:solid 1px #999;clear:both;}
 .print h2{font-size:12px;line-height:14px;}
 /******************************************** Others **************************************************************************/
 
-.select-02 { font:11px/13px Arial, Helvetica, sans-serif; }
+.select-02{margin:0;vertical-align:middle;background-color:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;outline:0;padding:2px 3px;font-size:13px;font-family:Arial,sans-serif;height:1.8em;/* IE7 */
+*padding-top:2px;*padding-bottom:1px;*height:auto;}
+
+
+
 
 .button-02{height:30px;text-align:center;color:#FFF;border:none;float:left;display:inline;padding:0 10px;font-weight:bold;zoom:1;-webkit-box-shadow:0 1px 3px #AAAAAA;-moz-box-shadow:0 1px 3px #AAAAAA;box-shadow:0 1px 3px #AAAAAA;border-radius:20px;-moz-border-radius:20px;-webkit-border-radius:20px;background:-webkit-gradient(linear,0 0,0 50%,from(#4B6688),to(#424D5C));background:-moz-linear-gradient(#4B6688,#424D5C 50%);background:linear-gradient(#4B6688,#424D5C 50%);-pie-background:linear-gradient(#4B6688,#424D5C 50%);position:relative;behavior:url(../js/PIE.htc); padding:0 0 2px 0;}
 .button-02:hover{color:#fff; }
@@ -630,6 +634,8 @@ hr{margin:0 0 10px 0;border:none;border-bottom:solid 1px #999;clear:both;}
 
 .pTop20{padding:20px 0 0 0; display:block; }
 .tbl-firmas{ margin:70px 0 0 0; }
+.selects-width01 div.selector,.selects-width01 div.selector span{width:100px;}
+.selects-width01 div.selector select{width:100px;}
 
 /******************************************** from elmer **************************************************************************/
 
