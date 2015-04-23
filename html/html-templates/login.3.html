@@ -1,0 +1,78 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transimtional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><title>
+	Portal SAVI
+</title><meta name="description" /><meta name="author" content="JWM Solutions" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link href="../css/main.css" rel="stylesheet" type="text/css" /><link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" title="css2" />
+
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 //Aqui asignamos el click al elemento <a>
+                 $("#almacenLista"). click(function () {
+                     alert("Presionaste un <a>");
+                 });
+             });
+        </script>
+        <script type="text/javascript" src="../js/jquery-1.4.4.js"></script>
+        <script type="text/javascript" src="../js/functions.js"></script>
+
+        <script type="text/javascript" src="../js/onfly.js"></script>
+            <!--[if IE]><link rel="stylesheet" href="../css/ie.css" /><![endif]-->
+</head>
+<body class="bg-gradient">
+    	<div class="container-login">
+            <div class="login-box clearfix">
+                <div class="logo-login">
+                    <div class="box"><img src="../css/theme-default/img/logos/logo.png"/></div>	
+                </div>
+                <form method="post" action="login.aspx" id="ctl01" class="login-form">
+
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNTA5MzUzODE2D2QWAgIDD2QWBAILDxBkZBYAZAINDw9kPCsABgBkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBQtjaGtSZWNvcmRhchWVwMyIhfnje6Q9NADsfNjCZXir4Gv+fe0SM8OaxeNF" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQK4o+fJAgLB2tiCDgLKw6LYBQLVx/1JAoznisYGqpKUA9EkixmKjr3aBIdaGHqoLxMxYOtRfCVrR5DfP30=" />
+</div>
+                    <div id="divUser" class="field">
+                        <span id="lblUser" class="lbl_text">    Usuario:</span>
+                        <input name="txtuser" type="text" maxlength="10" id="txtuser" /></div>
+
+                    <div id="divPass" class="field">
+                        <span id="lblPass" class="lbl_text">Contraseña:</span>                    
+                        <input name="txtpass" type="password" maxlength="10" id="txtpass" />
+                    
+                    <div id="divAlmacen" class="field">
+                     
+                        
+                        
+                        
+                    </div>
+
+                     </div>
+                    
+                     
+                    <div class="pl clearfix">
+                    <div class="cont-chk"><input id="chkRecordar" type="checkbox" name="chkRecordar" /><span>Recordar contraseña</span></div>
+                    <input type="submit" name="Button1" value="Entrar" id="Button1" class="button submit btn-entrar" />
+                    </div>
+                    
+                   
+                  
+                    
+                   
+                    <div class="field">
+                        <span id="lbError" style="font-weight:bold;color:Red"></span>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="footer"><a href="RecuperarPass.aspx" class="getpass iframe">Recuperar <strong>contraseña</strong></a> | &reg; 2011 SAVI</div>
+		
+
+</body>
+</html>
+

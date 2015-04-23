@@ -8,8 +8,8 @@
         <meta name="author" content="JWM Solutions">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link href="../css/main.css" rel="stylesheet" type="text/css" media="screen" />
-    	<link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="../css/main.css" rel="stylesheet" type="text/css" media="all" />
+    	<link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" media="all" />
         <!--[if IE]><link rel="stylesheet" href="../css/ie.css" /><![endif]-->
     </head>
     <body>
@@ -71,16 +71,19 @@
             	<h1 class="seccion-title icon-admon"><span>Administración /</span> Productos</h1>
                 <div class="separador-content"></div>
                 <div class="white-container gray-container clearfix">
-                    <form name="form-admin-products" class="form-admin-products">
-                        <span>
-                            <label for="clave">CLAVE:</label>
-                            <input type="text" id="clave" name="clave" placeholder="# CLAVE"/>
-                        </span>
-                        <span>
-                            <label>&nbsp;</label>
-                            <a href="#" id="" class="button btn-gray btn-buscar">Buscar</a>
-                        </span>
-                    </form>
+                    <div class="form-admin-products">
+                    	<div class="row">
+                            <span class="left">
+                                <label for="clave">Coloca cualquiera de los siguientes datos::</label>
+                                <input type="text" id="clave" name="clave" placeholder="# CLAVE"/>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre del producto"/>
+                            </span>
+	                        <span class="right">
+    	                        <label>&nbsp;</label>
+        	                    <a href="#" id="" class="button btn-gray btn-buscar">Buscar</a>
+            	            </span>
+                        </div>
+                    </div>
                 </div>
                 <div class="blank-container clearfix">
                     <h2><span class="navy-blue">900</span> Recetas encontradas</h2> 

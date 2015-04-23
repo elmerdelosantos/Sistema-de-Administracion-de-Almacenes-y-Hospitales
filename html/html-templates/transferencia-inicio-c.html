@@ -8,8 +8,8 @@
         <meta name="author" content="JWM Solutions">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link href="../css/main.css" rel="stylesheet" type="text/css" media="screen" />
-    	<link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="../css/main.css" rel="stylesheet" type="text/css" media="all" />
+    	<link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" media="all" />
         <!--[if IE]><link rel="stylesheet" href="../css/ie.css" /><![endif]-->
     </head>
     <body>
@@ -73,7 +73,7 @@
                 	<p class="right">Almacén surtidor:&nbsp;&nbsp;<strong>Toluca</strong></p>
                 </div>
                 <div class="white-container clearfix">
-                	<form name="form-tipo-trans" class="form-tipo-trans">
+                	<div class="form-tipo-trans">
                     	 <span>
                     		<label for="tipo-trans">Elige el tipo de transferencia:</label>
                 			<select name="tipo-trans"><option>Devoluciones</option></select>
@@ -82,8 +82,11 @@
                     		<label for="motivo">Motivo de la devolución:</label>
                 			<select name="motivo"><option>----</option></select>
                         </span>
-                        <a href="#" id="" class="button btn-gray btn-crear-trans">Crear transferencia</a>
-                    </form>
+                        <span class="pTop20">
+                        <a href="#" id="" class="button btn-gray">Crear transferencia</a>
+                        
+                        </span>
+                    </div>
                     <div class="column-right">
                     	<div class="wrapper">
                             <form name="form-surtido-receta">

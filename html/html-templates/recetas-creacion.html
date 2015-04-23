@@ -8,8 +8,8 @@
         <meta name="author" content="JWM Solutions">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link href="../css/main.css" rel="stylesheet" type="text/css" media="screen" />
-    	<link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="../css/main.css" rel="stylesheet" type="text/css" media="all" />
+    	<link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" media="all" />
         <!--[if IE]><link rel="stylesheet" href="../css/ie.css" /><![endif]-->
     </head>
     <body>
@@ -74,43 +74,55 @@
                 	<span class="folio">FOLIO:<strong> RCT94941</strong></span>
 					<span class="data">Médico:&nbsp;<strong>Jonás Ernesto Pérez Rodríguez</strong>&nbsp;&nbsp;|&nbsp;&nbsp;Unidad Médica:&nbsp;<strong>Montemorelos, Nuevo León</strong></span>
                 </div>
+                <div class="selects-width01">
+                 <select name="">
+                   <option>Puede tener bastante contenido</option>
+                                    <option>Tipo 2</option>
+                                </select>
+                </div>
                 <div class="white-container clearfix">
-                	<form name="form-recetas" class="form-recetas">
-                    	<span>
-                    		<label for="">Tipo de consulta:</label>
-                			<select name="">
-                            	<option>Tipo 1</option>
-                                <option>Tipo 2</option>
-                            </select>
-                        </span>
-                        <span>
-                    		<label for="">Nombre del paciente:</label>
-                			 <input type="text" name="" />
-                        </span>
-                        <span>
-                    		<label for="">Tipo de consulta:</label>
-                			<select name="">
-                            	<option>Tipo 1</option>
-                                <option>Tipo 2</option>
-                            </select>
-                        </span>
-                        <span>
-                    		<label for="">Nombre del paciente:</label>
-                			 <input type="text" name="" />
-                        </span>
-                        <span>
-                    		<label for="">Tipo de consulta:</label>
-                			<select name="">
-                            	<option>Tipo 1</option>
-                                <option>Tipo 2</option>
-                            </select>
-                        </span>
-                        <span>
-                    		<label for="">Nombre del paciente:</label>
-                			 <input type="text" name="" />
-                        </span>
+                	<div class="form-recetas two-col">
+                    	<div class="row">
+                            <span class="left">
+                                <label for="">Tipo de consulta:</label>
+                                <select name="">
+                                    <option>Tipo 1</option>
+                                    <option>Tipo 2</option>
+                                </select>
+                            </span>
+                            <span class="right">
+                                <label for="">Nombre del paciente:</label>
+                                 <input type="text" name="" />
+                            </span>
+                        </div>
+                        <div class="row">
+                            <span class="left">
+                                <label for="">Tipo de consulta:</label>
+                                <select name="">
+                                    <option>Tipo 1</option>
+                                    <option>Tipo 2</option>
+                                </select>
+                            </span>
+                            <span class="right">
+                                <label for="">Nombre del paciente:</label>
+                                 <input type="text" name="" />
+                            </span>
+                        </div>
+                        <div class="row">
+                            <span class="left">
+                                <label for="">Tipo de consulta:</label>
+                                <select name="">
+                                    <option>Tipo 1</option>
+                                    <option>Tipo 2</option>
+                                </select>
+                            </span>
+	                        <span class="right">
+    	                		<label for="">Nombre del paciente:</label>
+        	        			 <input type="text" name="" />
+            	            </span>
+                        </div>
                         <a href="#" id="" class="button btn-gray btn-buscar">Buscar</a>
-                    </form>
+                    </div>
                 </div>
                 <div class="blank-container clearfix">
                     <h2>Agregar medicamentos</h2> 
@@ -119,7 +131,153 @@
                     <p class="receta-med">&iquest;No recuerdas el medicamento?</p>
                  </div>
                  <div class="white-container-shadow clearfix">
-                    <img src="../img/others/grid-recetas.png" />
+                    <table border="0" cellpadding="0" cellspacing="0" class="grid">
+                    	<thead>
+                        	<tr>
+								<th width="50">Surtido</th>
+                            	<th><span class="icon-arrow-down-small">CLAVE</span></th>
+                                <th>Nombre</th>
+                                <th>Cantidad</th>
+                                <th>Caducidad</th>
+                                <th>Localización</th>
+                                <th>Nombre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+								<td><input type="checkbox" name="" /></td>
+                           	  <td><select name="" class="select-02">
+                            	<option>Tipo 1</option>
+                                <option>Tipo 2</option>
+                            </select> <select name="" class="select-02">
+                            	<option>Tipo 1</option>
+                                <option>Tipo 2</option>
+                            </select> <select name="" class="select-02">
+                            	<option>Tipo 1</option>
+                                <option>Tipo 2</option>
+                            </select> <select name="" class="select-02">
+                            	<option>Tipo 1</option>
+                                <option>Tipo 2</option>
+                            </select></td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+								<td><input type="checkbox" name="" /></td>
+                            	<td><select name="select" class="select-02">
+                            	  <option>Tipo 1</option>
+                            	  <option>Tipo 2</option>
+                          	  </select></td>
+                                <td>CF20112042</td>
+                                <td>22</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>300</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+								<td><input type="checkbox" name="" /></td>
+                            	<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                            <tr>
+                            	<td><input type="checkbox" name="" /></td>
+								<td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>1</td>
+                                <td>10/01/2011</td>
+                                <td>CF20112042</td>
+                                <td>10/01/2011</td>
+                            </tr>
+                        </tbody>
+                    </table>
             	</div> 
                 <div class="separador-content"></div>
                 <a href="#" id="btn-grabar" class="button right"><span class="icon-check">Grabar</span></a>

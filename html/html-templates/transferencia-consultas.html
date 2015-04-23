@@ -8,8 +8,8 @@
         <meta name="author" content="JWM Solutions">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link href="../css/main.css" rel="stylesheet" type="text/css" media="screen" />
-    	<link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="../css/main.css" rel="stylesheet" type="text/css" media="all" />
+    	<link href="../css/theme-default/style.css" rel="stylesheet" type="text/css" media="all" />
         <!--[if IE]><link rel="stylesheet" href="css/ie.css" /><![endif]-->
     </head>
     <body>
@@ -71,7 +71,7 @@
             	<h1 class="seccion-title icon-trans"><span>Órdenes de transferencia /</span> Consultas</h1>
                 <div class="separador-content"></div>
                 <div class="white-container gray-container clearfix">
-                	<form name="form-trans-consulta" class="form-trans-consulta">
+                	<div class="form-trans-consulta">
                     	<span>
                     		<label for="trans-orden">Número de orden:</label>
 							<input type="text" id="trans-orden" name="trans-orden" placeholder="# Orden"/>
@@ -82,14 +82,14 @@
                         </span>
 						<span>
                     		<label for="fecha">Rango de fecha:</label>
-                			<input type="text" id="fecha-ini" name="fecha-ini" placeholder="Inicial"/>
-							<input type="text" id="fecha-fin" name="fecha-fin" placeholder="Final"/>
+                			<input type="text" name="fecha-ini" class="fecha-ini" placeholder="Inicial"/>
+							<input type="text" name="fecha-fin" class="fecha-fin" placeholder="Final"/>
                         </span>
 						<span>
                     		<label>&nbsp;</label>
                 			<a href="#" id="" class="button btn-gray btn-buscar">Buscar</a>
                         </span>
-                    </form>
+                    </div>
                 </div>
                 <div class="blank-container clearfix">
                     <h2><span class="navy-blue">900</span> Transferencias encontradas</h2> 

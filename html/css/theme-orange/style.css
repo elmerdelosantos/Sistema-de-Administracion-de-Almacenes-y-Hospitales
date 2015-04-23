@@ -674,3 +674,14 @@ position:relative; behavior: url(../js/PIE.htc);}
 .icon-export{background:url(../img/icons/icon-exportar.png) left no-repeat, url(../img/icons/arrow-down-black.png) right 6px no-repeat;
 -pie-background:url(img/icons/icon-exportar.png) left no-repeat, url(img/icons/arrow-down-black.png) right 11px no-repeat; 
 padding:0 10px 0 19px!important; position:relative; behavior: url(../js/PIE.htc); cursor:pointer;}
+
+
+
+.button-02{height:30px; line-height:30px; text-align:center; color:#FFF; border:none; float:left; display:inline; padding:0 0 2px 0; font-weight:bold; 
+-webkit-box-shadow:0 1px 3px #AAAAAA; -moz-box-shadow:0 1px 3px #AAAAAA; box-shadow:0 1px 3px #AAAAAA; 
+border-radius: 20px; -moz-border-radius: 20px; -webkit-border-radius: 20px;
+background: -webkit-gradient(linear, 0 0, 0 50%, from(#F97A00), to(#D26000));
+background: -moz-linear-gradient(#F97A00, #D26000 50%);
+background: linear-gradient(#F97A00, #D26000 50%);
+-pie-background: linear-gradient(#F97A00, #D26000 50%);
+position:relative; behavior: url(../js/PIE.htc);
